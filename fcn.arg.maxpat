@@ -58,7 +58,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "Arg Out",
-					"comment" : "Arg(x,y) Out",
+					"comment" : "Arg(x,y) (rad) Out",
 					"id" : "obj-84",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -469,7 +469,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "num.pi.maxpat",
-				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Darren",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Primitives",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
