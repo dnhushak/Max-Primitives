@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 4
+			"minor" : 1,
+			"revision" : 1,
+			"architecture" : "x64"
 		}
 ,
 		"rect" : [ 1511.0, 580.0, 640.0, 480.0 ],
@@ -27,6 +28,18 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"annotation" : "End of line",
+					"comment" : "End of line",
+					"id" : "obj-9",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 165.0, 285.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"annotation" : "Time Grain",
 					"comment" : "Time Grain",
@@ -296,6 +309,16 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 79.5, 209.0, 174.5, 209.0 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}

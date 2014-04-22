@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
-			"architecture" : "x86"
+			"revision" : 1,
+			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 50.0, 94.0, 640.0, 480.0 ],
+		"rect" : [ 1756.0, 519.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 120.0, 165.0, 57.0, 20.0 ],
+					"text" : "zl slice 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -75,11 +89,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "float", "float", "float" ],
-					"patching_rect" : [ 75.0, 150.0, 89.0, 20.0 ],
-					"text" : "unpack 0. 0. 0."
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 75.0, 135.0, 57.0, 20.0 ],
+					"text" : "zl slice 1"
 				}
 
 			}
@@ -104,7 +118,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 75.0, 105.0, 25.0, 25.0 ]
+					"patching_rect" : [ 75.0, 90.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -114,28 +128,18 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 84.5, 212.0, 84.5, 212.0 ],
+					"midpoints" : [ 84.5, 204.5, 84.5, 204.5 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 119.5, 182.0, 114.5, 182.0 ],
+					"midpoints" : [ 122.5, 159.5, 129.5, 159.5 ],
 					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 154.5, 182.0, 204.5, 182.0 ],
-					"source" : [ "obj-1", 2 ]
 				}
 
 			}
@@ -170,6 +174,26 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 129.5, 189.5, 114.5, 189.5 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 167.5, 189.5, 204.5, 189.5 ],
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -180,14 +204,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "fcn.degtorad.maxpat",
-				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Primitives",
+				"bootpath" : "/Users/Shared/Git/Max-Primitives",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "num.pi.maxpat",
-				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Primitives",
+				"bootpath" : "/Users/Shared/Git/Max-Primitives",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
