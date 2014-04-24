@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
-			"architecture" : "x86"
+			"revision" : 1,
+			"architecture" : "x64"
 		}
 ,
 		"rect" : [ 160.0, 44.0, 640.0, 480.0 ],
@@ -29,12 +29,15 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-3",
-					"maxclass" : "button",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 60.0, 75.0, 20.0, 20.0 ]
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 45.0, 75.0, 32.5, 20.0 ],
+					"text" : "t b l"
 				}
 
 			}
@@ -102,21 +105,21 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 1 ],
+					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 84.5, 79.5, 107.5, 79.5 ],
+					"midpoints" : [ 84.5, 64.5, 54.5, 64.5 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-11", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 84.5, 64.5, 69.5, 64.5 ],
-					"source" : [ "obj-2", 0 ]
+					"midpoints" : [ 68.0, 99.5, 107.5, 99.5 ],
+					"source" : [ "obj-3", 1 ]
 				}
 
 			}
@@ -125,7 +128,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 69.5, 99.5, 39.5, 99.5 ],
+					"midpoints" : [ 54.5, 99.5, 39.5, 99.5 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
