@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 5
+			"minor" : 1,
+			"revision" : 3,
+			"architecture" : "x64"
 		}
 ,
 		"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -58,8 +59,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 15.0, 45.0, 181.0, 20.0 ],
-					"text" : "regexp @re ([/]*) @substitute \" \""
+					"patching_rect" : [ 15.0, 45.0, 170.0, 20.0 ],
+					"text" : "regexp @re (/) @substitute \" \""
 				}
 
 			}
